@@ -1,0 +1,2633 @@
+ * Name                                              RESPONSABLE
+ - Subclass Information                              
+ - Comments                                          
+ - Help Book Title                                   
+ * Title                                             MODULE2
+ * Console Window                                    RESPONSABLE
+ * Menu Module                                       DEFAULT&SMARTBAR
+ - Initial Menu                                      
+ - Defer Required Enforcement                        No
+ - Menu Role                                         
+ - Mouse Navigation Limit                            Form
+ - First Navigation Data Block                       
+ - Current Record Visual Attribute Group             
+ - Validation Unit                                   Default
+ * Interaction Mode                                  Non-Blocking
+ - Maximum Query Time                                0
+ - Maximum Records Fetched                           0
+ - Isolation Mode                                    Read Committed
+ * Coordinate System                                 
+   ----------
+   * Coordinate System                               Real
+   * Real Unit                                       Point
+   * Default Font Scaling                            Yes
+   * Character Cell Height                           14
+   * Character Cell Width                            7
+   ----------
+ - Use 3D Controls                                   Yes
+ - Form Horizontal Toolbar Canvas                    
+ - Form Vertical Toolbar Canvas                      
+ - Direction                                         Default
+ * Triggers                                          
+   ----------
+   * Name                                            WHEN-NEW-FORM-INSTANCE
+   - Subclass Information                            
+   - Comments                                        
+   - Trigger Style                                   PL/SQL
+   * Trigger Text                                    
+
+:global.path := 'C:\Documents and Settings\Administrator\Desktop\projetSI2019\';
+
+   - Fire in Enter-Query Mode                        Yes
+   - Execution Hierarchy                             Override
+   - Display in 'Keyboard Help'                      No
+   - 'Keyboard Help' Text                            
+   - Trigger Steps                                   
+   ----------
+ - Alerts                                            
+ - Attached PL/SQL Libraries                         
+ * Blocks                                            
+   ----------
+   * Name                                            RESPONSABLE
+   - Subclass Information                            
+   - Comments                                        
+   - Navigation Style                                Same Record
+   - Previous Navigation Data Block                  
+   - Next Navigation Data Block                      
+   - Current Record Visual Attribute Group           
+   - Query Array Size                                0
+   - Number of Records Buffered                      0
+   - Number of Records Displayed                     1
+   - Query All Records                               No
+   - Record Orientation                              Vertical
+   - Single Record                                   No
+   - Database Data Block                             Yes
+   - Enforce Primary Key                             No
+   - Query Allowed                                   Yes
+   - Query Data Source Type                          Table
+   - Query Data Source Name                          
+   - Query Data Source Columns                       
+   - Query Data Source Arguments                     
+   - Alias                                           
+   - Include REF Item                                No
+   - WHERE Clause                                    
+   - ORDER BY Clause                                 
+   - Optimizer Hint                                  
+   - Insert Allowed                                  Yes
+   - Update Allowed                                  Yes
+   - Locking Mode                                    Automatic
+   - Delete Allowed                                  Yes
+   - Key Mode                                        Automatic
+   - Update Changed Columns Only                     No
+   - Enforce Column Security                         No
+   - Maximum Query Time                              0
+   - Maximum Records Fetched                         0
+   - DML Data Target Type                            Table
+   - DML Data Target Name                            
+   - Insert Procedure Name                           
+   - Insert Procedure Result Set Columns             
+   - Insert Procedure Arguments                      
+   - Update Procedure Name                           
+   - Update Procedure Result Set Columns             
+   - Update Procedure Arguments                      
+   - Delete Procedure Name                           
+   - Delete Procedure Result Set Columns             
+   - Delete Procedure Arguments                      
+   - Lock Procedure Name                             
+   - Lock Procedure Result Set Columns               
+   - Lock Procedure Arguments                        
+   - DML Array Size                                  1
+   - Precompute Summaries                            No
+   - DML Returning Value                             No
+   - Show Scroll Bar                                 No
+   - Scroll Bar Canvas                               
+   - Scroll Bar Tab Page                             
+   - Scroll Bar Orientation                          Vertical
+   - Scroll Bar X Position                           0
+   - Scroll Bar Y Position                           0
+   * Scroll Bar Width                                14
+   * Scroll Bar Length                               135
+   - Scroll Bar Height                               0
+   - Reverse Direction                               No
+   - Visual Attribute Group                          DEFAULT
+   - Foreground Color                                
+   - Background Color                                
+   - Fill Pattern                                    
+   - Direction                                       Default
+   - Triggers                                        
+   * Items                                           
+     ----------
+     * Name                                          EXIT
+     * Item Type                                     Push Button
+     - Subclass Information                          
+     - Comments                                      
+     - Help Book Topic                               
+     - Enabled                                       Yes
+     * Label                                         Quitter la plateforme
+     - Access Key                                    
+     - Implementation Class                          
+     - Iconic                                        No
+     - Icon Filename                                 
+     - Default Button                                No
+     - Popup Menu                                    
+     - Keyboard Navigable                            Yes
+     - Mouse Navigate                                Yes
+     - Previous Navigation Item                      
+     - Next Navigation Item                          
+     - Current Record Visual Attribute Group         
+     - Distance Between Records                      0
+     - Number of Items Displayed                     0
+     - Visible                                       Yes
+     * Canvas                                        RESPONSABLE
+     - Tab Page                                      
+     * X Position                                    385
+     * Y Position                                    286
+     * Width                                         123
+     * Height                                        24
+     - Visual Attribute Group                        DEFAULT
+     - Prompt Visual Attribute Group                 DEFAULT
+     * Foreground Color                              black
+     * Background Color                              gray12
+     - Fill Pattern                                  
+     - Font                                          
+     * Font Name                                     Tahoma
+     * Font Size                                     12
+     * Font Weight                                   Demilight
+     * Font Style                                    Plain
+     * Font Spacing                                  Normal
+     - Prompt                                        
+     - Prompt Display Style                          First Record
+     - Prompt Justification                          Start
+     - Prompt Attachment Edge                        Start
+     - Prompt Alignment                              Start
+     - Prompt Attachment Offset                      0
+     - Prompt Alignment Offset                       0
+     - Prompt Reading Order                          Default
+     - Prompt Foreground Color                       
+     - Prompt Font                                   
+     - Prompt Font Name                              
+     - Prompt Font Size                              0
+     - Prompt Font Weight                            Medium
+     - Prompt Font Style                             Plain
+     - Prompt Font Spacing                           Normal
+     - Hint                                          
+     - Display Hint Automatically                    No
+     - Tooltip                                       
+     - Tooltip Visual Attribute Group                
+     - Direction                                     Default
+     * Triggers                                      
+       ----------
+       * Name                                        WHEN-BUTTON-PRESSED
+       - Subclass Information                        
+       - Comments                                    
+       - Trigger Style                               PL/SQL
+       * Trigger Text                                
+
+exit_form;
+open_form(concat(:global.path,'CONNECTION.fmx'));
+
+
+
+
+       - Fire in Enter-Query Mode                    Yes
+       - Execution Hierarchy                         Override
+       - Display in 'Keyboard Help'                  No
+       - 'Keyboard Help' Text                        
+       - Trigger Steps                               
+       ----------
+     ----------
+     * Name                                          PUSH_BUTTON13
+     * Item Type                                     Push Button
+     - Subclass Information                          
+     - Comments                                      
+     - Help Book Topic                               
+     - Enabled                                       Yes
+     * Label                                         Lister les departements
+     * Access Key                                     
+     - Implementation Class                          
+     - Iconic                                        No
+     - Icon Filename                                 
+     - Default Button                                No
+     - Popup Menu                                    
+     - Keyboard Navigable                            Yes
+     - Mouse Navigate                                Yes
+     - Previous Navigation Item                      
+     - Next Navigation Item                          
+     - Current Record Visual Attribute Group         
+     - Distance Between Records                      0
+     - Number of Items Displayed                     0
+     - Visible                                       Yes
+     * Canvas                                        RESPONSABLE
+     - Tab Page                                      
+     * X Position                                    65
+     * Y Position                                    215
+     * Width                                         141
+     * Height                                        17
+     - Visual Attribute Group                        DEFAULT
+     - Prompt Visual Attribute Group                 DEFAULT
+     * Foreground Color                              black
+     * Background Color                              gray12
+     - Fill Pattern                                  
+     - Font                                          
+     * Font Name                                     Tahoma
+     * Font Size                                     9
+     * Font Weight                                   Demilight
+     * Font Style                                    Plain
+     * Font Spacing                                  Normal
+     - Prompt                                        
+     - Prompt Display Style                          First Record
+     - Prompt Justification                          Start
+     - Prompt Attachment Edge                        Start
+     - Prompt Alignment                              Start
+     - Prompt Attachment Offset                      0
+     - Prompt Alignment Offset                       0
+     - Prompt Reading Order                          Default
+     - Prompt Foreground Color                       
+     - Prompt Font                                   
+     - Prompt Font Name                              
+     - Prompt Font Size                              0
+     - Prompt Font Weight                            Medium
+     - Prompt Font Style                             Plain
+     - Prompt Font Spacing                           Normal
+     - Hint                                          
+     - Display Hint Automatically                    No
+     - Tooltip                                       
+     - Tooltip Visual Attribute Group                
+     - Direction                                     Default
+     * Triggers                                      
+       ----------
+       * Name                                        WHEN-BUTTON-PRESSED
+       - Subclass Information                        
+       - Comments                                    
+       - Trigger Style                               PL/SQL
+       * Trigger Text                                
+
+SET_BLOCK_PROPERTY('DEPARTEMENT', DEFAULT_WHERE,'ID_DEPARTEMENT = 1');
+go_block('DEPARTMENT');
+execute_query;
+       - Fire in Enter-Query Mode                    Yes
+       - Execution Hierarchy                         Override
+       - Display in 'Keyboard Help'                  No
+       - 'Keyboard Help' Text                        
+       - Trigger Steps                               
+       ----------
+     ----------
+     * Name                                          PUSH_BUTTON14
+     * Item Type                                     Push Button
+     - Subclass Information                          
+     - Comments                                      
+     - Help Book Topic                               
+     - Enabled                                       Yes
+     * Label                                         Lister tous  les materiels
+     - Access Key                                    
+     - Implementation Class                          
+     - Iconic                                        No
+     - Icon Filename                                 
+     - Default Button                                No
+     - Popup Menu                                    
+     - Keyboard Navigable                            Yes
+     - Mouse Navigate                                Yes
+     - Previous Navigation Item                      
+     - Next Navigation Item                          
+     - Current Record Visual Attribute Group         
+     - Distance Between Records                      0
+     - Number of Items Displayed                     0
+     - Visible                                       Yes
+     * Canvas                                        RESPONSABLE
+     - Tab Page                                      
+     * X Position                                    375
+     * Y Position                                    133
+     * Width                                         124
+     * Height                                        21
+     - Visual Attribute Group                        DEFAULT
+     - Prompt Visual Attribute Group                 DEFAULT
+     * Foreground Color                              black
+     * Background Color                              gray12
+     - Fill Pattern                                  
+     - Font                                          
+     * Font Name                                     Tahoma
+     * Font Size                                     9
+     * Font Weight                                   Demilight
+     * Font Style                                    Plain
+     * Font Spacing                                  Normal
+     - Prompt                                        
+     - Prompt Display Style                          First Record
+     - Prompt Justification                          Start
+     - Prompt Attachment Edge                        Start
+     - Prompt Alignment                              Start
+     - Prompt Attachment Offset                      0
+     - Prompt Alignment Offset                       0
+     - Prompt Reading Order                          Default
+     - Prompt Foreground Color                       
+     - Prompt Font                                   
+     - Prompt Font Name                              
+     - Prompt Font Size                              0
+     - Prompt Font Weight                            Medium
+     - Prompt Font Style                             Plain
+     - Prompt Font Spacing                           Normal
+     - Hint                                          
+     - Display Hint Automatically                    No
+     - Tooltip                                       
+     - Tooltip Visual Attribute Group                
+     - Direction                                     Default
+     * Triggers                                      
+       ----------
+       * Name                                        WHEN-BUTTON-PRESSED
+       - Subclass Information                        
+       - Comments                                    
+       - Trigger Style                               PL/SQL
+       * Trigger Text                                
+
+go_block('MATERIEL');
+execute_query;
+       - Fire in Enter-Query Mode                    Yes
+       - Execution Hierarchy                         Override
+       - Display in 'Keyboard Help'                  No
+       - 'Keyboard Help' Text                        
+       - Trigger Steps                               
+       ----------
+     ----------
+     * Name                                          PUSH_BUTTON31
+     * Item Type                                     Push Button
+     - Subclass Information                          
+     - Comments                                      
+     - Help Book Topic                               
+     - Enabled                                       Yes
+     * Label                                         Demande de reformation materiel
+     - Access Key                                    
+     - Implementation Class                          
+     - Iconic                                        No
+     - Icon Filename                                 
+     - Default Button                                No
+     - Popup Menu                                    
+     - Keyboard Navigable                            Yes
+     - Mouse Navigate                                Yes
+     - Previous Navigation Item                      
+     - Next Navigation Item                          
+     - Current Record Visual Attribute Group         
+     - Distance Between Records                      0
+     - Number of Items Displayed                     0
+     - Visible                                       Yes
+     * Canvas                                        RESPONSABLE
+     - Tab Page                                      
+     * X Position                                    271
+     * Y Position                                    215
+     * Width                                         221
+     * Height                                        17
+     - Visual Attribute Group                        DEFAULT
+     - Prompt Visual Attribute Group                 DEFAULT
+     * Foreground Color                              black
+     * Background Color                              gray12
+     - Fill Pattern                                  
+     - Font                                          
+     * Font Name                                     Tahoma
+     * Font Size                                     9
+     * Font Weight                                   Demilight
+     * Font Style                                    Plain
+     * Font Spacing                                  Normal
+     - Prompt                                        
+     - Prompt Display Style                          First Record
+     - Prompt Justification                          Start
+     - Prompt Attachment Edge                        Start
+     - Prompt Alignment                              Start
+     - Prompt Attachment Offset                      0
+     - Prompt Alignment Offset                       0
+     - Prompt Reading Order                          Default
+     - Prompt Foreground Color                       
+     - Prompt Font                                   
+     - Prompt Font Name                              
+     - Prompt Font Size                              0
+     - Prompt Font Weight                            Medium
+     - Prompt Font Style                             Plain
+     - Prompt Font Spacing                           Normal
+     - Hint                                          
+     - Display Hint Automatically                    No
+     - Tooltip                                       
+     - Tooltip Visual Attribute Group                
+     - Direction                                     Default
+     * Triggers                                      
+       ----------
+       * Name                                        WHEN-BUTTON-PRESSED
+       - Subclass Information                        
+       - Comments                                    
+       - Trigger Style                               PL/SQL
+       * Trigger Text                                
+
+go_block('REPAIR');
+       - Fire in Enter-Query Mode                    Yes
+       - Execution Hierarchy                         Override
+       - Display in 'Keyboard Help'                  No
+       - 'Keyboard Help' Text                        
+       - Trigger Steps                               
+       ----------
+     ----------
+     * Name                                          PUSH_BUTTON58
+     * Item Type                                     Push Button
+     - Subclass Information                          
+     - Comments                                      
+     - Help Book Topic                               
+     - Enabled                                       Yes
+     * Label                                         Revenir vers l'accueil
+     - Access Key                                    
+     - Implementation Class                          
+     - Iconic                                        No
+     - Icon Filename                                 
+     - Default Button                                No
+     - Popup Menu                                    
+     - Keyboard Navigable                            Yes
+     - Mouse Navigate                                Yes
+     - Previous Navigation Item                      
+     - Next Navigation Item                          
+     - Current Record Visual Attribute Group         
+     - Distance Between Records                      0
+     - Number of Items Displayed                     0
+     - Visible                                       Yes
+     * Canvas                                        RESPONSABLE
+     - Tab Page                                      
+     * X Position                                    20
+     * Y Position                                    287
+     * Width                                         119
+     * Height                                        23
+     - Visual Attribute Group                        DEFAULT
+     - Prompt Visual Attribute Group                 DEFAULT
+     * Foreground Color                              black
+     * Background Color                              gray12
+     - Fill Pattern                                  
+     - Font                                          
+     * Font Name                                     Tahoma
+     * Font Size                                     12
+     * Font Weight                                   Demilight
+     * Font Style                                    Plain
+     * Font Spacing                                  Normal
+     - Prompt                                        
+     - Prompt Display Style                          First Record
+     - Prompt Justification                          Start
+     - Prompt Attachment Edge                        Start
+     - Prompt Alignment                              Start
+     - Prompt Attachment Offset                      0
+     - Prompt Alignment Offset                       0
+     - Prompt Reading Order                          Default
+     - Prompt Foreground Color                       
+     - Prompt Font                                   
+     - Prompt Font Name                              
+     - Prompt Font Size                              0
+     - Prompt Font Weight                            Medium
+     - Prompt Font Style                             Plain
+     - Prompt Font Spacing                           Normal
+     - Hint                                          
+     - Display Hint Automatically                    No
+     - Tooltip                                       
+     - Tooltip Visual Attribute Group                
+     - Direction                                     Default
+     * Triggers                                      
+       ----------
+       * Name                                        WHEN-BUTTON-PRESSED
+       - Subclass Information                        
+       - Comments                                    
+       - Trigger Style                               PL/SQL
+       * Trigger Text                                
+
+exit_form;
+open_form(concat(:global.path,'CONNECTION.fmx'));
+       - Fire in Enter-Query Mode                    Yes
+       - Execution Hierarchy                         Override
+       - Display in 'Keyboard Help'                  No
+       - 'Keyboard Help' Text                        
+       - Trigger Steps                               
+       ----------
+     ----------
+     * Name                                          PUSH_BUTTON59
+     * Item Type                                     Push Button
+     - Subclass Information                          
+     - Comments                                      
+     - Help Book Topic                               
+     - Enabled                                       Yes
+     * Label                                         Revenir vers zone responsable
+     - Access Key                                    
+     - Implementation Class                          
+     - Iconic                                        No
+     - Icon Filename                                 
+     - Default Button                                No
+     - Popup Menu                                    
+     - Keyboard Navigable                            Yes
+     - Mouse Navigate                                Yes
+     - Previous Navigation Item                      
+     - Next Navigation Item                          
+     - Current Record Visual Attribute Group         
+     - Distance Between Records                      0
+     - Number of Items Displayed                     0
+     - Visible                                       Yes
+     * Canvas                                        DEPARTMENT
+     - Tab Page                                      
+     * X Position                                    23
+     * Y Position                                    250
+     * Width                                         172
+     * Height                                        24
+     - Visual Attribute Group                        DEFAULT
+     - Prompt Visual Attribute Group                 DEFAULT
+     * Foreground Color                              black
+     * Background Color                              gray12
+     - Fill Pattern                                  
+     - Font                                          
+     * Font Name                                     Tahoma
+     * Font Size                                     12
+     * Font Weight                                   Demilight
+     * Font Style                                    Plain
+     * Font Spacing                                  Normal
+     - Prompt                                        
+     - Prompt Display Style                          First Record
+     - Prompt Justification                          Start
+     - Prompt Attachment Edge                        Start
+     - Prompt Alignment                              Start
+     - Prompt Attachment Offset                      0
+     - Prompt Alignment Offset                       0
+     - Prompt Reading Order                          Default
+     - Prompt Foreground Color                       
+     - Prompt Font                                   
+     - Prompt Font Name                              
+     - Prompt Font Size                              0
+     - Prompt Font Weight                            Medium
+     - Prompt Font Style                             Plain
+     - Prompt Font Spacing                           Normal
+     - Hint                                          
+     - Display Hint Automatically                    No
+     - Tooltip                                       
+     - Tooltip Visual Attribute Group                
+     - Direction                                     Default
+     * Triggers                                      
+       ----------
+       * Name                                        WHEN-BUTTON-PRESSED
+       - Subclass Information                        
+       - Comments                                    
+       - Trigger Style                               PL/SQL
+       * Trigger Text                                
+
+go_block('RESPONSABLE');
+
+       - Fire in Enter-Query Mode                    Yes
+       - Execution Hierarchy                         Override
+       - Display in 'Keyboard Help'                  No
+       - 'Keyboard Help' Text                        
+       - Trigger Steps                               
+       ----------
+     ----------
+     * Name                                          PUSH_BUTTON60
+     * Item Type                                     Push Button
+     - Subclass Information                          
+     - Comments                                      
+     - Help Book Topic                               
+     - Enabled                                       Yes
+     * Label                                         Quitter la plateforme
+     - Access Key                                    
+     - Implementation Class                          
+     - Iconic                                        No
+     - Icon Filename                                 
+     - Default Button                                No
+     - Popup Menu                                    
+     - Keyboard Navigable                            Yes
+     - Mouse Navigate                                Yes
+     - Previous Navigation Item                      
+     - Next Navigation Item                          
+     - Current Record Visual Attribute Group         
+     - Distance Between Records                      0
+     - Number of Items Displayed                     0
+     - Visible                                       Yes
+     * Canvas                                        DEPARTMENT
+     - Tab Page                                      
+     * X Position                                    296
+     * Y Position                                    249
+     * Width                                         142
+     * Height                                        24
+     - Visual Attribute Group                        DEFAULT
+     - Prompt Visual Attribute Group                 DEFAULT
+     * Foreground Color                              black
+     * Background Color                              gray12
+     - Fill Pattern                                  
+     - Font                                          
+     * Font Name                                     Tahoma
+     * Font Size                                     12
+     * Font Weight                                   Demilight
+     * Font Style                                    Plain
+     * Font Spacing                                  Normal
+     - Prompt                                        
+     - Prompt Display Style                          First Record
+     - Prompt Justification                          Start
+     - Prompt Attachment Edge                        Start
+     - Prompt Alignment                              Start
+     - Prompt Attachment Offset                      0
+     - Prompt Alignment Offset                       0
+     - Prompt Reading Order                          Default
+     - Prompt Foreground Color                       
+     - Prompt Font                                   
+     - Prompt Font Name                              
+     - Prompt Font Size                              0
+     - Prompt Font Weight                            Medium
+     - Prompt Font Style                             Plain
+     - Prompt Font Spacing                           Normal
+     - Hint                                          
+     - Display Hint Automatically                    No
+     - Tooltip                                       
+     - Tooltip Visual Attribute Group                
+     - Direction                                     Default
+     * Triggers                                      
+       ----------
+       * Name                                        WHEN-BUTTON-PRESSED
+       - Subclass Information                        
+       - Comments                                    
+       - Trigger Style                               PL/SQL
+       * Trigger Text                                
+
+exit_form;
+open_form(concat(:global.path,'RESPONSABLE.fmx'));
+
+       - Fire in Enter-Query Mode                    Yes
+       - Execution Hierarchy                         Override
+       - Display in 'Keyboard Help'                  No
+       - 'Keyboard Help' Text                        
+       - Trigger Steps                               
+       ----------
+     ----------
+     * Name                                          PUSH_BUTTON79
+     * Item Type                                     Push Button
+     - Subclass Information                          
+     - Comments                                      
+     - Help Book Topic                               
+     - Enabled                                       Yes
+     * Label                                         Revenir vers zone responsable
+     - Access Key                                    
+     - Implementation Class                          
+     - Iconic                                        No
+     - Icon Filename                                 
+     - Default Button                                No
+     - Popup Menu                                    
+     - Keyboard Navigable                            Yes
+     - Mouse Navigate                                Yes
+     - Previous Navigation Item                      
+     - Next Navigation Item                          
+     - Current Record Visual Attribute Group         
+     - Distance Between Records                      0
+     - Number of Items Displayed                     0
+     - Visible                                       Yes
+     - Canvas                                        
+     - Tab Page                                      
+     * X Position                                    45
+     * Y Position                                    278
+     * Width                                         131
+     * Height                                        19
+     - Visual Attribute Group                        DEFAULT
+     - Prompt Visual Attribute Group                 DEFAULT
+     * Foreground Color                              black
+     * Background Color                              white
+     - Fill Pattern                                  
+     - Font                                          
+     * Font Name                                     Tahoma
+     * Font Size                                     8
+     * Font Weight                                   Demilight
+     * Font Style                                    Plain
+     * Font Spacing                                  Normal
+     - Prompt                                        
+     - Prompt Display Style                          First Record
+     - Prompt Justification                          Start
+     - Prompt Attachment Edge                        Start
+     - Prompt Alignment                              Start
+     - Prompt Attachment Offset                      0
+     - Prompt Alignment Offset                       0
+     - Prompt Reading Order                          Default
+     - Prompt Foreground Color                       
+     - Prompt Font                                   
+     - Prompt Font Name                              
+     - Prompt Font Size                              0
+     - Prompt Font Weight                            Medium
+     - Prompt Font Style                             Plain
+     - Prompt Font Spacing                           Normal
+     - Hint                                          
+     - Display Hint Automatically                    No
+     - Tooltip                                       
+     - Tooltip Visual Attribute Group                
+     - Direction                                     Default
+     * Triggers                                      
+       ----------
+       * Name                                        WHEN-BUTTON-PRESSED
+       - Subclass Information                        
+       - Comments                                    
+       - Trigger Style                               PL/SQL
+       * Trigger Text                                
+
+go_block('RESPONSABLE');
+       - Fire in Enter-Query Mode                    Yes
+       - Execution Hierarchy                         Override
+       - Display in 'Keyboard Help'                  No
+       - 'Keyboard Help' Text                        
+       - Trigger Steps                               
+       ----------
+     ----------
+     * Name                                          PUSH_BUTTON80
+     * Item Type                                     Push Button
+     - Subclass Information                          
+     - Comments                                      
+     - Help Book Topic                               
+     - Enabled                                       Yes
+     * Label                                         Quitter la plateforme
+     - Access Key                                    
+     - Implementation Class                          
+     - Iconic                                        No
+     - Icon Filename                                 
+     - Default Button                                No
+     - Popup Menu                                    
+     - Keyboard Navigable                            Yes
+     - Mouse Navigate                                Yes
+     - Previous Navigation Item                      
+     - Next Navigation Item                          
+     - Current Record Visual Attribute Group         
+     - Distance Between Records                      0
+     - Number of Items Displayed                     0
+     - Visible                                       Yes
+     - Canvas                                        
+     - Tab Page                                      
+     * X Position                                    349
+     * Y Position                                    279
+     * Width                                         87
+     * Height                                        19
+     - Visual Attribute Group                        DEFAULT
+     - Prompt Visual Attribute Group                 DEFAULT
+     * Foreground Color                              black
+     * Background Color                              white
+     - Fill Pattern                                  
+     - Font                                          
+     * Font Name                                     Tahoma
+     * Font Size                                     8
+     * Font Weight                                   Demilight
+     * Font Style                                    Plain
+     * Font Spacing                                  Normal
+     - Prompt                                        
+     - Prompt Display Style                          First Record
+     - Prompt Justification                          Start
+     - Prompt Attachment Edge                        Start
+     - Prompt Alignment                              Start
+     - Prompt Attachment Offset                      0
+     - Prompt Alignment Offset                       0
+     - Prompt Reading Order                          Default
+     - Prompt Foreground Color                       
+     - Prompt Font                                   
+     - Prompt Font Name                              
+     - Prompt Font Size                              0
+     - Prompt Font Weight                            Medium
+     - Prompt Font Style                             Plain
+     - Prompt Font Spacing                           Normal
+     - Hint                                          
+     - Display Hint Automatically                    No
+     - Tooltip                                       
+     - Tooltip Visual Attribute Group                
+     - Direction                                     Default
+     * Triggers                                      
+       ----------
+       * Name                                        WHEN-BUTTON-PRESSED
+       - Subclass Information                        
+       - Comments                                    
+       - Trigger Style                               PL/SQL
+       * Trigger Text                                
+
+exit_form;
+open_form(concat(:global.path,'CONNECTION.fmx'));
+       - Fire in Enter-Query Mode                    Yes
+       - Execution Hierarchy                         Override
+       - Display in 'Keyboard Help'                  No
+       - 'Keyboard Help' Text                        
+       - Trigger Steps                               
+       ----------
+     ----------
+     * Name                                          PUSH_BUTTON90
+     * Item Type                                     Push Button
+     - Subclass Information                          
+     - Comments                                      
+     - Help Book Topic                               
+     - Enabled                                       Yes
+     * Label                                         Revenir vers zone responsable
+     - Access Key                                    
+     - Implementation Class                          
+     - Iconic                                        No
+     - Icon Filename                                 
+     - Default Button                                No
+     - Popup Menu                                    
+     - Keyboard Navigable                            Yes
+     - Mouse Navigate                                Yes
+     - Previous Navigation Item                      
+     - Next Navigation Item                          
+     - Current Record Visual Attribute Group         
+     - Distance Between Records                      0
+     - Number of Items Displayed                     0
+     - Visible                                       Yes
+     * Canvas                                        REPAIR
+     - Tab Page                                      
+     * X Position                                    19
+     * Y Position                                    284
+     * Width                                         248
+     * Height                                        26
+     - Visual Attribute Group                        DEFAULT
+     - Prompt Visual Attribute Group                 DEFAULT
+     * Foreground Color                              black
+     * Background Color                              white
+     - Fill Pattern                                  
+     - Font                                          
+     * Font Name                                     Tahoma
+     * Font Size                                     16
+     * Font Weight                                   Demilight
+     * Font Style                                    Plain
+     * Font Spacing                                  Normal
+     - Prompt                                        
+     - Prompt Display Style                          First Record
+     - Prompt Justification                          Start
+     - Prompt Attachment Edge                        Start
+     - Prompt Alignment                              Start
+     - Prompt Attachment Offset                      0
+     - Prompt Alignment Offset                       0
+     - Prompt Reading Order                          Default
+     - Prompt Foreground Color                       
+     - Prompt Font                                   
+     - Prompt Font Name                              
+     - Prompt Font Size                              0
+     - Prompt Font Weight                            Medium
+     - Prompt Font Style                             Plain
+     - Prompt Font Spacing                           Normal
+     - Hint                                          
+     - Display Hint Automatically                    No
+     - Tooltip                                       
+     - Tooltip Visual Attribute Group                
+     - Direction                                     Default
+     * Triggers                                      
+       ----------
+       * Name                                        WHEN-BUTTON-PRESSED
+       - Subclass Information                        
+       - Comments                                    
+       - Trigger Style                               PL/SQL
+       * Trigger Text                                
+
+go_block('RESPONSABLE');
+       - Fire in Enter-Query Mode                    Yes
+       - Execution Hierarchy                         Override
+       - Display in 'Keyboard Help'                  No
+       - 'Keyboard Help' Text                        
+       - Trigger Steps                               
+       ----------
+     ----------
+     * Name                                          DEPARTMENT_NAME
+     * Item Type                                     Text Item
+     - Subclass Information                          
+     - Comments                                      
+     - Help Book Topic                               
+     - Enabled                                       Yes
+     * Justification                                 Start
+     - Implementation Class                          
+     - Multi-Line                                    No
+     - Wrap Style                                    Word
+     - Case Restriction                              Mixed
+     - Conceal Data                                  No
+     - Keep Cursor Position                          No
+     - Automatic Skip                                No
+     - Popup Menu                                    
+     - Keyboard Navigable                            Yes
+     - Previous Navigation Item                      
+     - Next Navigation Item                          
+     - Data Type                                     Char
+     - Data Length Semantics                         Null
+     - Maximum Length                                30
+     - Initial Value                                 
+     - Required                                      No
+     - Format Mask                                   
+     - Lowest Allowed Value                          
+     - Highest Allowed Value                         
+     - Copy Value from Item                          
+     - Synchronize with Item                         
+     - Calculation Mode                              None
+     - Formula                                       
+     - Summary Function                              None
+     - Summarized Block                              
+     - Summarized Item                               
+     - Current Record Visual Attribute Group         
+     - Distance Between Records                      0
+     - Number of Items Displayed                     0
+     - Database Item                                 Yes
+     - Column Name                                   
+     - Primary Key                                   No
+     - Query Only                                    No
+     - Query Allowed                                 Yes
+     - Query Length                                  0
+     - Case Insensitive Query                        No
+     - Insert Allowed                                Yes
+     - Update Allowed                                Yes
+     - Update Only if NULL                           No
+     - Lock Record                                   No
+     - List of Values                                
+     - List X Position                               0
+     - List Y Position                               0
+     - Validate from List                            No
+     - Editor                                        
+     - Editor X Position                             0
+     - Editor Y Position                             0
+     - Visible                                       Yes
+     * Canvas                                        RESPONSABLE
+     - Tab Page                                      
+     * X Position                                    40
+     * Y Position                                    132
+     * Width                                         150
+     * Height                                        22
+     - Bevel                                         Lowered
+     - Rendered                                      Yes
+     - Show Vertical Scroll Bar                      No
+     - Visual Attribute Group                        DEFAULT
+     - Prompt Visual Attribute Group                 DEFAULT
+     * Foreground Color                              black
+     * Background Color                              gray12
+     - Fill Pattern                                  
+     - Font                                          
+     * Font Name                                     Tahoma
+     * Font Size                                     12
+     * Font Weight                                   Demilight
+     * Font Style                                    Plain
+     * Font Spacing                                  Normal
+     - Prompt                                        
+     - Prompt Display Style                          First Record
+     - Prompt Justification                          Start
+     - Prompt Attachment Edge                        Start
+     - Prompt Alignment                              Start
+     - Prompt Attachment Offset                      0
+     - Prompt Alignment Offset                       0
+     - Prompt Reading Order                          Default
+     - Prompt Foreground Color                       
+     - Prompt Font                                   
+     - Prompt Font Name                              
+     - Prompt Font Size                              0
+     - Prompt Font Weight                            Medium
+     - Prompt Font Style                             Plain
+     - Prompt Font Spacing                           Normal
+     - Hint                                          
+     - Display Hint Automatically                    No
+     - Tooltip                                       
+     - Tooltip Visual Attribute Group                
+     - Initial Keyboard State                        Default
+     - Reading Order                                 Default
+     - Keyboard State                                Any
+     - Triggers                                      
+     ----------
+     * Name                                          PUSH_BUTTON105
+     * Item Type                                     Push Button
+     - Subclass Information                          
+     - Comments                                      
+     - Help Book Topic                               
+     - Enabled                                       Yes
+     * Label                                         Lister les materiels
+     - Access Key                                    
+     - Implementation Class                          
+     - Iconic                                        No
+     - Icon Filename                                 
+     - Default Button                                No
+     - Popup Menu                                    
+     - Keyboard Navigable                            Yes
+     - Mouse Navigate                                Yes
+     - Previous Navigation Item                      
+     - Next Navigation Item                          
+     - Current Record Visual Attribute Group         
+     - Distance Between Records                      0
+     - Number of Items Displayed                     0
+     - Visible                                       Yes
+     * Canvas                                        RESPONSABLE
+     - Tab Page                                      
+     * X Position                                    214
+     * Y Position                                    134
+     * Width                                         135
+     * Height                                        20
+     - Visual Attribute Group                        DEFAULT
+     - Prompt Visual Attribute Group                 DEFAULT
+     * Foreground Color                              black
+     * Background Color                              gray12
+     - Fill Pattern                                  
+     - Font                                          
+     * Font Name                                     Tahoma
+     * Font Size                                     9
+     * Font Weight                                   Demilight
+     * Font Style                                    Plain
+     * Font Spacing                                  Normal
+     - Prompt                                        
+     - Prompt Display Style                          First Record
+     - Prompt Justification                          Start
+     - Prompt Attachment Edge                        Start
+     - Prompt Alignment                              Start
+     - Prompt Attachment Offset                      0
+     - Prompt Alignment Offset                       0
+     - Prompt Reading Order                          Default
+     - Prompt Foreground Color                       
+     - Prompt Font                                   
+     - Prompt Font Name                              
+     - Prompt Font Size                              0
+     - Prompt Font Weight                            Medium
+     - Prompt Font Style                             Plain
+     - Prompt Font Spacing                           Normal
+     - Hint                                          
+     - Display Hint Automatically                    No
+     - Tooltip                                       
+     - Tooltip Visual Attribute Group                
+     - Direction                                     Default
+     * Triggers                                      
+       ----------
+       * Name                                        WHEN-BUTTON-PRESSED
+       - Subclass Information                        
+       - Comments                                    
+       - Trigger Style                               PL/SQL
+       * Trigger Text                                
+
+declare
+	id_depart number;
+begin
+	select GERER.ID_DEPARTEMENT into id_depart from GERER,DEPARTEMENT where DEPARTEMENT.ID_DEPARTEMENT = GERER.ID_DEPARTEMENT and DEPARTEMENT.DESIGNATION = :DEPARTMENT_NAME;
+	set_block_property('MATERIEL',DEFAULT_WHERE,'ID_DEPARTEMENT = id_depart');
+  execute_query;
+  go_block('MATERIEL');
+	end;
+
+
+       - Fire in Enter-Query Mode                    Yes
+       - Execution Hierarchy                         Override
+       - Display in 'Keyboard Help'                  No
+       - 'Keyboard Help' Text                        
+       - Trigger Steps                               
+       ----------
+     ----------
+     * Name                                          MESSAGE
+     * Item Type                                     Text Item
+     - Subclass Information                          
+     - Comments                                      
+     - Help Book Topic                               
+     - Enabled                                       Yes
+     * Justification                                 Start
+     - Implementation Class                          
+     - Multi-Line                                    No
+     - Wrap Style                                    Word
+     - Case Restriction                              Mixed
+     - Conceal Data                                  No
+     - Keep Cursor Position                          No
+     - Automatic Skip                                No
+     - Popup Menu                                    
+     - Keyboard Navigable                            Yes
+     - Previous Navigation Item                      
+     - Next Navigation Item                          
+     - Data Type                                     Char
+     - Data Length Semantics                         Null
+     - Maximum Length                                30
+     * Initial Value                                 Votre message
+     - Required                                      No
+     - Format Mask                                   
+     - Lowest Allowed Value                          
+     - Highest Allowed Value                         
+     - Copy Value from Item                          
+     - Synchronize with Item                         
+     - Calculation Mode                              None
+     - Formula                                       
+     - Summary Function                              None
+     - Summarized Block                              
+     - Summarized Item                               
+     - Current Record Visual Attribute Group         
+     - Distance Between Records                      0
+     - Number of Items Displayed                     0
+     - Database Item                                 Yes
+     - Column Name                                   
+     - Primary Key                                   No
+     - Query Only                                    No
+     - Query Allowed                                 Yes
+     - Query Length                                  0
+     - Case Insensitive Query                        No
+     - Insert Allowed                                Yes
+     - Update Allowed                                Yes
+     - Update Only if NULL                           No
+     - Lock Record                                   No
+     - List of Values                                
+     - List X Position                               0
+     - List Y Position                               0
+     - Validate from List                            No
+     - Editor                                        
+     - Editor X Position                             0
+     - Editor Y Position                             0
+     - Visible                                       Yes
+     * Canvas                                        REPAIR
+     - Tab Page                                      
+     * X Position                                    136
+     * Y Position                                    115
+     * Width                                         262
+     * Height                                        19
+     - Bevel                                         Lowered
+     - Rendered                                      Yes
+     - Show Vertical Scroll Bar                      No
+     - Visual Attribute Group                        DEFAULT
+     - Prompt Visual Attribute Group                 DEFAULT
+     * Foreground Color                              black
+     * Background Color                              white
+     - Fill Pattern                                  
+     - Font                                          
+     * Font Name                                     Tahoma
+     * Font Size                                     9
+     * Font Weight                                   Demilight
+     * Font Style                                    Plain
+     * Font Spacing                                  Normal
+     - Prompt                                        
+     - Prompt Display Style                          First Record
+     - Prompt Justification                          Start
+     - Prompt Attachment Edge                        Start
+     - Prompt Alignment                              Start
+     - Prompt Attachment Offset                      0
+     - Prompt Alignment Offset                       0
+     - Prompt Reading Order                          Default
+     - Prompt Foreground Color                       
+     - Prompt Font                                   
+     - Prompt Font Name                              
+     - Prompt Font Size                              0
+     - Prompt Font Weight                            Medium
+     - Prompt Font Style                             Plain
+     - Prompt Font Spacing                           Normal
+     - Hint                                          
+     - Display Hint Automatically                    No
+     - Tooltip                                       
+     - Tooltip Visual Attribute Group                
+     - Initial Keyboard State                        Default
+     - Reading Order                                 Default
+     - Keyboard State                                Any
+     - Triggers                                      
+     ----------
+     * Name                                          PUSH_BUTTON139
+     * Item Type                                     Push Button
+     - Subclass Information                          
+     - Comments                                      
+     - Help Book Topic                               
+     - Enabled                                       Yes
+     * Label                                         Quitter l'application
+     - Access Key                                    
+     - Implementation Class                          
+     - Iconic                                        No
+     - Icon Filename                                 
+     - Default Button                                No
+     - Popup Menu                                    
+     - Keyboard Navigable                            Yes
+     - Mouse Navigate                                Yes
+     - Previous Navigation Item                      
+     - Next Navigation Item                          
+     - Current Record Visual Attribute Group         
+     - Distance Between Records                      0
+     - Number of Items Displayed                     0
+     - Visible                                       Yes
+     * Canvas                                        MATERIEL
+     - Tab Page                                      
+     * X Position                                    24
+     * Y Position                                    244
+     * Width                                         204
+     * Height                                        27
+     - Visual Attribute Group                        DEFAULT
+     - Prompt Visual Attribute Group                 DEFAULT
+     * Foreground Color                              black
+     * Background Color                              white
+     - Fill Pattern                                  
+     - Font                                          
+     * Font Name                                     Tahoma
+     * Font Size                                     12
+     * Font Weight                                   Demilight
+     * Font Style                                    Plain
+     * Font Spacing                                  Normal
+     - Prompt                                        
+     - Prompt Display Style                          First Record
+     - Prompt Justification                          Start
+     - Prompt Attachment Edge                        Start
+     - Prompt Alignment                              Start
+     - Prompt Attachment Offset                      0
+     - Prompt Alignment Offset                       0
+     - Prompt Reading Order                          Default
+     - Prompt Foreground Color                       
+     - Prompt Font                                   
+     - Prompt Font Name                              
+     - Prompt Font Size                              0
+     - Prompt Font Weight                            Medium
+     - Prompt Font Style                             Plain
+     - Prompt Font Spacing                           Normal
+     - Hint                                          
+     - Display Hint Automatically                    No
+     - Tooltip                                       
+     - Tooltip Visual Attribute Group                
+     - Direction                                     Default
+     * Triggers                                      
+       ----------
+       * Name                                        WHEN-BUTTON-PRESSED
+       - Subclass Information                        
+       - Comments                                    
+       - Trigger Style                               PL/SQL
+       * Trigger Text                                
+
+exit_form;
+open_form(concat(:global.path,'CONNECTION.fmx'));
+       - Fire in Enter-Query Mode                    Yes
+       - Execution Hierarchy                         Override
+       - Display in 'Keyboard Help'                  No
+       - 'Keyboard Help' Text                        
+       - Trigger Steps                               
+       ----------
+     ----------
+     * Name                                          PUSH_BUTTON140
+     * Item Type                                     Push Button
+     - Subclass Information                          
+     - Comments                                      
+     - Help Book Topic                               
+     - Enabled                                       Yes
+     * Label                                         Retourner vers zone responsable
+     - Access Key                                    
+     - Implementation Class                          
+     - Iconic                                        No
+     - Icon Filename                                 
+     - Default Button                                No
+     - Popup Menu                                    
+     - Keyboard Navigable                            Yes
+     - Mouse Navigate                                Yes
+     - Previous Navigation Item                      
+     - Next Navigation Item                          
+     - Current Record Visual Attribute Group         
+     - Distance Between Records                      0
+     - Number of Items Displayed                     0
+     - Visible                                       Yes
+     * Canvas                                        MATERIEL
+     - Tab Page                                      
+     * X Position                                    301
+     * Y Position                                    244
+     * Width                                         204
+     * Height                                        27
+     - Visual Attribute Group                        DEFAULT
+     - Prompt Visual Attribute Group                 DEFAULT
+     * Foreground Color                              black
+     * Background Color                              white
+     - Fill Pattern                                  
+     - Font                                          
+     * Font Name                                     Tahoma
+     * Font Size                                     12
+     * Font Weight                                   Demilight
+     * Font Style                                    Plain
+     * Font Spacing                                  Normal
+     - Prompt                                        
+     - Prompt Display Style                          First Record
+     - Prompt Justification                          Start
+     - Prompt Attachment Edge                        Start
+     - Prompt Alignment                              Start
+     - Prompt Attachment Offset                      0
+     - Prompt Alignment Offset                       0
+     - Prompt Reading Order                          Default
+     - Prompt Foreground Color                       
+     - Prompt Font                                   
+     - Prompt Font Name                              
+     - Prompt Font Size                              0
+     - Prompt Font Weight                            Medium
+     - Prompt Font Style                             Plain
+     - Prompt Font Spacing                           Normal
+     - Hint                                          
+     - Display Hint Automatically                    No
+     - Tooltip                                       
+     - Tooltip Visual Attribute Group                
+     - Direction                                     Default
+     * Triggers                                      
+       ----------
+       * Name                                        WHEN-BUTTON-PRESSED
+       - Subclass Information                        
+       - Comments                                    
+       - Trigger Style                               PL/SQL
+       * Trigger Text                                
+
+go_block('RESPONSABLE');
+       - Fire in Enter-Query Mode                    Yes
+       - Execution Hierarchy                         Override
+       - Display in 'Keyboard Help'                  No
+       - 'Keyboard Help' Text                        
+       - Trigger Steps                               
+       ----------
+     ----------
+   - Relations                                       
+   ----------
+   * Name                                            MATERIEL
+   - Subclass Information                            
+   - Comments                                        
+   - Navigation Style                                Same Record
+   - Previous Navigation Data Block                  
+   - Next Navigation Data Block                      
+   - Current Record Visual Attribute Group           
+   - Query Array Size                                0
+   - Number of Records Buffered                      0
+   * Number of Records Displayed                     1
+   * Query All Records                               Yes
+   - Record Orientation                              Vertical
+   - Single Record                                   No
+   - Database Data Block                             Yes
+   * Enforce Primary Key                             Yes
+   - Query Allowed                                   Yes
+   * Query Data Source Type                          FROM clause query
+   * Query Data Source Name                          ProjetSi.MATERIEL
+   - Query Data Source Columns                       
+   - Query Data Source Arguments                     
+   - Alias                                           
+   - Include REF Item                                No
+   * WHERE Clause                                    MATERIEL.ID_MATERIEL,AFFECTER.ID_MATERIEL
+   - ORDER BY Clause                                 
+   - Optimizer Hint                                  
+   * Insert Allowed                                  No
+   * Update Allowed                                  No
+   - Locking Mode                                    Automatic
+   * Delete Allowed                                  No
+   * Key Mode                                        Non-Updateable
+   - Update Changed Columns Only                     No
+   - Enforce Column Security                         No
+   - Maximum Query Time                              0
+   - Maximum Records Fetched                         0
+   - DML Data Target Type                            Table
+   * DML Data Target Name                            MATERIEL
+   - Insert Procedure Name                           
+   - Insert Procedure Result Set Columns             
+   - Insert Procedure Arguments                      
+   - Update Procedure Name                           
+   - Update Procedure Result Set Columns             
+   - Update Procedure Arguments                      
+   - Delete Procedure Name                           
+   - Delete Procedure Result Set Columns             
+   - Delete Procedure Arguments                      
+   - Lock Procedure Name                             
+   - Lock Procedure Result Set Columns               
+   - Lock Procedure Arguments                        
+   - DML Array Size                                  1
+   - Precompute Summaries                            No
+   - DML Returning Value                             No
+   * Show Scroll Bar                                 Yes
+   * Scroll Bar Canvas                               MATERIEL
+   * Scroll Bar Tab Page                             
+   - Scroll Bar Orientation                          Vertical
+   * Scroll Bar X Position                           296
+   * Scroll Bar Y Position                           124
+   * Scroll Bar Width                                14
+   * Scroll Bar Length                               14
+   - Scroll Bar Height                               0
+   - Reverse Direction                               No
+   - Visual Attribute Group                          DEFAULT
+   - Foreground Color                                
+   - Background Color                                
+   - Fill Pattern                                    
+   - Direction                                       Default
+   - Triggers                                        
+   * Items                                           
+     ----------
+     * Name                                          ID_DEPARTEMENT
+     - Item Type                                     Text Item
+     - Subclass Information                          
+     - Comments                                      
+     - Help Book Topic                               
+     - Enabled                                       Yes
+     - Justification                                 Start
+     - Implementation Class                          
+     - Multi-Line                                    No
+     - Wrap Style                                    Word
+     - Case Restriction                              Mixed
+     - Conceal Data                                  No
+     - Keep Cursor Position                          No
+     - Automatic Skip                                No
+     - Popup Menu                                    
+     - Keyboard Navigable                            Yes
+     - Previous Navigation Item                      
+     - Next Navigation Item                          
+     - Data Type                                     Char
+     - Data Length Semantics                         Null
+     - Maximum Length                                30
+     - Initial Value                                 
+     - Required                                      No
+     - Format Mask                                   
+     - Lowest Allowed Value                          
+     - Highest Allowed Value                         
+     - Copy Value from Item                          
+     - Synchronize with Item                         
+     - Calculation Mode                              None
+     - Formula                                       
+     - Summary Function                              None
+     - Summarized Block                              
+     - Summarized Item                               
+     - Current Record Visual Attribute Group         
+     - Distance Between Records                      0
+     * Number of Items Displayed                     0
+     - Database Item                                 Yes
+     * Column Name                                   AFFECTER.ID_DEPARTEMENT
+     - Primary Key                                   No
+     - Query Only                                    No
+     - Query Allowed                                 Yes
+     - Query Length                                  0
+     - Case Insensitive Query                        No
+     * Insert Allowed                                No
+     * Update Allowed                                No
+     - Update Only if NULL                           No
+     - Lock Record                                   No
+     - List of Values                                
+     - List X Position                               0
+     - List Y Position                               0
+     - Validate from List                            No
+     - Editor                                        
+     - Editor X Position                             0
+     - Editor Y Position                             0
+     - Visible                                       Yes
+     * Canvas                                        MATERIEL
+     * Tab Page                                      
+     * X Position                                    160
+     * Y Position                                    124
+     * Width                                         68
+     * Height                                        14
+     - Bevel                                         Lowered
+     - Rendered                                      Yes
+     - Show Vertical Scroll Bar                      No
+     - Visual Attribute Group                        DEFAULT
+     - Prompt Visual Attribute Group                 DEFAULT
+     - Foreground Color                              
+     - Background Color                              
+     - Fill Pattern                                  
+     - Font                                          
+     - Font Name                                     
+     - Font Size                                     0
+     - Font Weight                                   Medium
+     - Font Style                                    Plain
+     - Font Spacing                                  Normal
+     - Prompt                                        
+     * Prompt Display Style                          First Record
+     - Prompt Justification                          Start
+     - Prompt Attachment Edge                        Start
+     - Prompt Alignment                              Start
+     - Prompt Attachment Offset                      0
+     - Prompt Alignment Offset                       0
+     - Prompt Reading Order                          Default
+     - Prompt Foreground Color                       
+     - Prompt Font                                   
+     - Prompt Font Name                              
+     - Prompt Font Size                              0
+     - Prompt Font Weight                            Medium
+     - Prompt Font Style                             Plain
+     - Prompt Font Spacing                           Normal
+     - Hint                                          
+     - Display Hint Automatically                    No
+     - Tooltip                                       
+     - Tooltip Visual Attribute Group                
+     - Initial Keyboard State                        Default
+     - Reading Order                                 Default
+     - Keyboard State                                Any
+     - Triggers                                      
+     ----------
+     * Name                                          ID_MATERIEL
+     - Item Type                                     Text Item
+     - Subclass Information                          
+     - Comments                                      
+     - Help Book Topic                               
+     - Enabled                                       Yes
+     - Justification                                 Start
+     - Implementation Class                          
+     - Multi-Line                                    No
+     - Wrap Style                                    Word
+     - Case Restriction                              Mixed
+     - Conceal Data                                  No
+     - Keep Cursor Position                          No
+     - Automatic Skip                                No
+     - Popup Menu                                    
+     - Keyboard Navigable                            Yes
+     - Previous Navigation Item                      
+     - Next Navigation Item                          
+     - Data Type                                     Char
+     - Data Length Semantics                         Null
+     - Maximum Length                                30
+     - Initial Value                                 
+     - Required                                      No
+     - Format Mask                                   
+     - Lowest Allowed Value                          
+     - Highest Allowed Value                         
+     - Copy Value from Item                          
+     - Synchronize with Item                         
+     - Calculation Mode                              None
+     - Formula                                       
+     - Summary Function                              None
+     - Summarized Block                              
+     - Summarized Item                               
+     - Current Record Visual Attribute Group         
+     - Distance Between Records                      0
+     * Number of Items Displayed                     0
+     - Database Item                                 Yes
+     * Column Name                                   MATERIEL.ID_MATERIEL
+     * Primary Key                                   Yes
+     - Query Only                                    No
+     - Query Allowed                                 Yes
+     - Query Length                                  0
+     - Case Insensitive Query                        No
+     * Insert Allowed                                No
+     * Update Allowed                                No
+     - Update Only if NULL                           No
+     - Lock Record                                   No
+     - List of Values                                
+     - List X Position                               0
+     - List Y Position                               0
+     - Validate from List                            No
+     - Editor                                        
+     - Editor X Position                             0
+     - Editor Y Position                             0
+     - Visible                                       Yes
+     * Canvas                                        MATERIEL
+     * Tab Page                                      
+     * X Position                                    228
+     * Y Position                                    124
+     * Width                                         68
+     * Height                                        14
+     - Bevel                                         Lowered
+     - Rendered                                      Yes
+     - Show Vertical Scroll Bar                      No
+     - Visual Attribute Group                        DEFAULT
+     - Prompt Visual Attribute Group                 DEFAULT
+     - Foreground Color                              
+     - Background Color                              
+     - Fill Pattern                                  
+     - Font                                          
+     - Font Name                                     
+     - Font Size                                     0
+     - Font Weight                                   Medium
+     - Font Style                                    Plain
+     - Font Spacing                                  Normal
+     - Prompt                                        
+     * Prompt Display Style                          First Record
+     - Prompt Justification                          Start
+     - Prompt Attachment Edge                        Start
+     - Prompt Alignment                              Start
+     - Prompt Attachment Offset                      0
+     - Prompt Alignment Offset                       0
+     - Prompt Reading Order                          Default
+     - Prompt Foreground Color                       
+     - Prompt Font                                   
+     - Prompt Font Name                              
+     - Prompt Font Size                              0
+     - Prompt Font Weight                            Medium
+     - Prompt Font Style                             Plain
+     - Prompt Font Spacing                           Normal
+     - Hint                                          
+     - Display Hint Automatically                    No
+     - Tooltip                                       
+     - Tooltip Visual Attribute Group                
+     - Initial Keyboard State                        Default
+     - Reading Order                                 Default
+     - Keyboard State                                Any
+     - Triggers                                      
+     ----------
+   - Relations                                       
+   ----------
+   * Name                                            REPAIR
+   - Subclass Information                            
+   - Comments                                        
+   - Navigation Style                                Same Record
+   - Previous Navigation Data Block                  
+   - Next Navigation Data Block                      
+   - Current Record Visual Attribute Group           
+   - Query Array Size                                0
+   - Number of Records Buffered                      0
+   - Number of Records Displayed                     1
+   - Query All Records                               No
+   - Record Orientation                              Vertical
+   - Single Record                                   No
+   - Database Data Block                             Yes
+   - Enforce Primary Key                             No
+   - Query Allowed                                   Yes
+   - Query Data Source Type                          Table
+   - Query Data Source Name                          
+   - Query Data Source Columns                       
+   - Query Data Source Arguments                     
+   - Alias                                           
+   - Include REF Item                                No
+   - WHERE Clause                                    
+   - ORDER BY Clause                                 
+   - Optimizer Hint                                  
+   - Insert Allowed                                  Yes
+   - Update Allowed                                  Yes
+   - Locking Mode                                    Automatic
+   - Delete Allowed                                  Yes
+   - Key Mode                                        Automatic
+   - Update Changed Columns Only                     No
+   - Enforce Column Security                         No
+   - Maximum Query Time                              0
+   - Maximum Records Fetched                         0
+   - DML Data Target Type                            Table
+   - DML Data Target Name                            
+   - Insert Procedure Name                           
+   - Insert Procedure Result Set Columns             
+   - Insert Procedure Arguments                      
+   - Update Procedure Name                           
+   - Update Procedure Result Set Columns             
+   - Update Procedure Arguments                      
+   - Delete Procedure Name                           
+   - Delete Procedure Result Set Columns             
+   - Delete Procedure Arguments                      
+   - Lock Procedure Name                             
+   - Lock Procedure Result Set Columns               
+   - Lock Procedure Arguments                        
+   - DML Array Size                                  1
+   - Precompute Summaries                            No
+   - DML Returning Value                             No
+   - Show Scroll Bar                                 No
+   - Scroll Bar Canvas                               
+   - Scroll Bar Tab Page                             
+   - Scroll Bar Orientation                          Vertical
+   - Scroll Bar X Position                           0
+   - Scroll Bar Y Position                           0
+   * Scroll Bar Width                                14
+   * Scroll Bar Length                               135
+   - Scroll Bar Height                               0
+   - Reverse Direction                               No
+   - Visual Attribute Group                          DEFAULT
+   - Foreground Color                                
+   - Background Color                                
+   - Fill Pattern                                    
+   - Direction                                       Default
+   - Triggers                                        
+   * Items                                           
+     ----------
+     * Name                                          ENVOIDEMANDE
+     * Item Type                                     Push Button
+     - Subclass Information                          
+     - Comments                                      
+     - Help Book Topic                               
+     - Enabled                                       Yes
+     * Label                                         Envoyer demande de reformation
+     - Access Key                                    
+     - Implementation Class                          
+     - Iconic                                        No
+     - Icon Filename                                 
+     - Default Button                                No
+     - Popup Menu                                    
+     - Keyboard Navigable                            Yes
+     - Mouse Navigate                                Yes
+     - Previous Navigation Item                      
+     - Next Navigation Item                          
+     - Current Record Visual Attribute Group         
+     - Distance Between Records                      0
+     - Number of Items Displayed                     0
+     - Visible                                       Yes
+     * Canvas                                        REPAIR
+     - Tab Page                                      
+     * X Position                                    183
+     * Y Position                                    185
+     * Width                                         231
+     * Height                                        23
+     - Visual Attribute Group                        DEFAULT
+     - Prompt Visual Attribute Group                 DEFAULT
+     * Foreground Color                              black
+     * Background Color                              white
+     - Fill Pattern                                  
+     - Font                                          
+     * Font Name                                     Tahoma
+     * Font Size                                     12
+     * Font Weight                                   Demilight
+     * Font Style                                    Plain
+     * Font Spacing                                  Normal
+     - Prompt                                        
+     - Prompt Display Style                          First Record
+     - Prompt Justification                          Start
+     - Prompt Attachment Edge                        Start
+     - Prompt Alignment                              Start
+     - Prompt Attachment Offset                      0
+     - Prompt Alignment Offset                       0
+     - Prompt Reading Order                          Default
+     - Prompt Foreground Color                       
+     - Prompt Font                                   
+     - Prompt Font Name                              
+     - Prompt Font Size                              0
+     - Prompt Font Weight                            Medium
+     - Prompt Font Style                             Plain
+     - Prompt Font Spacing                           Normal
+     - Hint                                          
+     - Display Hint Automatically                    No
+     - Tooltip                                       
+     - Tooltip Visual Attribute Group                
+     - Direction                                     Default
+     * Triggers                                      
+       ----------
+       * Name                                        WHEN-BUTTON-PRESSED
+       - Subclass Information                        
+       - Comments                                    
+       - Trigger Style                               PL/SQL
+       * Trigger Text                                
+
+declare 
+begin
+	insert into DEMANDE VALUES(:PARAMETER.ID_RESP,0,Sysdate,:MESSAGE);
+	Message('Message de demande reforme envoye');
+	commit;
+	
+	end;
+       - Fire in Enter-Query Mode                    Yes
+       - Execution Hierarchy                         Override
+       - Display in 'Keyboard Help'                  No
+       - 'Keyboard Help' Text                        
+       - Trigger Steps                               
+       ----------
+     ----------
+   - Relations                                       
+   ----------
+   * Name                                            DEPARTMENT
+   - Subclass Information                            
+   - Comments                                        
+   - Navigation Style                                Same Record
+   - Previous Navigation Data Block                  
+   - Next Navigation Data Block                      
+   - Current Record Visual Attribute Group           
+   - Query Array Size                                0
+   - Number of Records Buffered                      0
+   - Number of Records Displayed                     1
+   - Query All Records                               No
+   - Record Orientation                              Vertical
+   - Single Record                                   No
+   - Database Data Block                             Yes
+   - Enforce Primary Key                             No
+   - Query Allowed                                   Yes
+   - Query Data Source Type                          Table
+   * Query Data Source Name                          DEPARTEMENT
+   * Query Data Source Columns                       
+     ----------
+     * Column Name                                   ID_DEPARTEMENT
+     * Column Type                                   NUMBER
+     - Column Type Name                              
+     - Parent Column                                 
+     * Length                                        0
+     * Precision                                     0
+     * Scale                                         -127
+     * Mandatory                                     Yes
+     ----------
+     * Column Name                                   DESIGNATION
+     * Column Type                                   VARCHAR2
+     - Column Type Name                              
+     - Parent Column                                 
+     * Length                                        4000
+     * Precision                                     0
+     * Scale                                         0
+     * Mandatory                                     No
+     ----------
+   - Query Data Source Arguments                     
+   - Alias                                           
+   - Include REF Item                                No
+   - WHERE Clause                                    
+   - ORDER BY Clause                                 
+   - Optimizer Hint                                  
+   - Insert Allowed                                  Yes
+   - Update Allowed                                  Yes
+   - Locking Mode                                    Automatic
+   - Delete Allowed                                  Yes
+   - Key Mode                                        Automatic
+   - Update Changed Columns Only                     No
+   - Enforce Column Security                         No
+   - Maximum Query Time                              0
+   - Maximum Records Fetched                         0
+   - DML Data Target Type                            Table
+   - DML Data Target Name                            
+   - Insert Procedure Name                           
+   - Insert Procedure Result Set Columns             
+   - Insert Procedure Arguments                      
+   - Update Procedure Name                           
+   - Update Procedure Result Set Columns             
+   - Update Procedure Arguments                      
+   - Delete Procedure Name                           
+   - Delete Procedure Result Set Columns             
+   - Delete Procedure Arguments                      
+   - Lock Procedure Name                             
+   - Lock Procedure Result Set Columns               
+   - Lock Procedure Arguments                        
+   - DML Array Size                                  1
+   - Precompute Summaries                            No
+   - DML Returning Value                             No
+   - Show Scroll Bar                                 No
+   - Scroll Bar Canvas                               
+   - Scroll Bar Tab Page                             
+   - Scroll Bar Orientation                          Vertical
+   - Scroll Bar X Position                           0
+   - Scroll Bar Y Position                           0
+   * Scroll Bar Width                                14
+   * Scroll Bar Length                               135
+   - Scroll Bar Height                               0
+   - Reverse Direction                               No
+   - Visual Attribute Group                          DEFAULT
+   - Foreground Color                                
+   - Background Color                                
+   - Fill Pattern                                    
+   - Direction                                       Default
+   - Triggers                                        
+   * Items                                           
+     ----------
+     * Name                                          ID_DEPARTEMENT
+     * Item Type                                     Text Item
+     - Subclass Information                          
+     - Comments                                      
+     - Help Book Topic                               
+     - Enabled                                       Yes
+     - Justification                                 Start
+     - Implementation Class                          
+     - Multi-Line                                    No
+     - Wrap Style                                    Word
+     - Case Restriction                              Mixed
+     - Conceal Data                                  No
+     - Keep Cursor Position                          No
+     - Automatic Skip                                No
+     - Popup Menu                                    
+     - Keyboard Navigable                            Yes
+     - Previous Navigation Item                      
+     - Next Navigation Item                          
+     * Data Type                                     Number
+     - Data Length Semantics                         Null
+     * Maximum Length                                40
+     - Initial Value                                 
+     * Required                                      Yes
+     - Format Mask                                   
+     - Lowest Allowed Value                          
+     - Highest Allowed Value                         
+     - Copy Value from Item                          
+     - Synchronize with Item                         
+     - Calculation Mode                              None
+     - Formula                                       
+     - Summary Function                              None
+     - Summarized Block                              
+     - Summarized Item                               
+     - Current Record Visual Attribute Group         
+     - Distance Between Records                      0
+     * Number of Items Displayed                     0
+     - Database Item                                 Yes
+     * Column Name                                   ID_DEPARTEMENT
+     - Primary Key                                   No
+     - Query Only                                    No
+     - Query Allowed                                 Yes
+     - Query Length                                  0
+     - Case Insensitive Query                        No
+     - Insert Allowed                                Yes
+     - Update Allowed                                Yes
+     - Update Only if NULL                           No
+     - Lock Record                                   No
+     - List of Values                                
+     - List X Position                               0
+     - List Y Position                               0
+     - Validate from List                            No
+     - Editor                                        
+     - Editor X Position                             0
+     - Editor Y Position                             0
+     - Visible                                       Yes
+     * Canvas                                        DEPARTMENT
+     * Tab Page                                      
+     * X Position                                    166
+     * Y Position                                    140
+     * Width                                         100
+     * Height                                        14
+     - Bevel                                         Lowered
+     - Rendered                                      Yes
+     - Show Vertical Scroll Bar                      No
+     - Visual Attribute Group                        DEFAULT
+     - Prompt Visual Attribute Group                 DEFAULT
+     - Foreground Color                              
+     - Background Color                              
+     - Fill Pattern                                  
+     - Font                                          
+     - Font Name                                     
+     - Font Size                                     0
+     - Font Weight                                   Medium
+     - Font Style                                    Plain
+     - Font Spacing                                  Normal
+     * Prompt                                        Id Departement
+     * Prompt Display Style                          First Record
+     - Prompt Justification                          Start
+     * Prompt Attachment Edge                        Top
+     * Prompt Alignment                              Center
+     - Prompt Attachment Offset                      0
+     - Prompt Alignment Offset                       0
+     - Prompt Reading Order                          Default
+     - Prompt Foreground Color                       
+     - Prompt Font                                   
+     - Prompt Font Name                              
+     - Prompt Font Size                              0
+     - Prompt Font Weight                            Medium
+     - Prompt Font Style                             Plain
+     - Prompt Font Spacing                           Normal
+     - Hint                                          
+     - Display Hint Automatically                    No
+     - Tooltip                                       
+     - Tooltip Visual Attribute Group                
+     - Initial Keyboard State                        Default
+     - Reading Order                                 Default
+     - Keyboard State                                Any
+     - Triggers                                      
+     ----------
+     * Name                                          DESIGNATION
+     * Item Type                                     Text Item
+     - Subclass Information                          
+     - Comments                                      
+     - Help Book Topic                               
+     - Enabled                                       Yes
+     - Justification                                 Start
+     - Implementation Class                          
+     - Multi-Line                                    No
+     - Wrap Style                                    Word
+     - Case Restriction                              Mixed
+     - Conceal Data                                  No
+     - Keep Cursor Position                          No
+     - Automatic Skip                                No
+     - Popup Menu                                    
+     - Keyboard Navigable                            Yes
+     - Previous Navigation Item                      
+     - Next Navigation Item                          
+     - Data Type                                     Char
+     * Data Length Semantics                         BYTE
+     * Maximum Length                                4000
+     - Initial Value                                 
+     - Required                                      No
+     - Format Mask                                   
+     - Lowest Allowed Value                          
+     - Highest Allowed Value                         
+     - Copy Value from Item                          
+     - Synchronize with Item                         
+     - Calculation Mode                              None
+     - Formula                                       
+     - Summary Function                              None
+     - Summarized Block                              
+     - Summarized Item                               
+     - Current Record Visual Attribute Group         
+     - Distance Between Records                      0
+     * Number of Items Displayed                     0
+     - Database Item                                 Yes
+     * Column Name                                   DESIGNATION
+     - Primary Key                                   No
+     - Query Only                                    No
+     - Query Allowed                                 Yes
+     - Query Length                                  0
+     - Case Insensitive Query                        No
+     - Insert Allowed                                Yes
+     - Update Allowed                                Yes
+     - Update Only if NULL                           No
+     - Lock Record                                   No
+     - List of Values                                
+     - List X Position                               0
+     - List Y Position                               0
+     - Validate from List                            No
+     - Editor                                        
+     - Editor X Position                             0
+     - Editor Y Position                             0
+     - Visible                                       Yes
+     * Canvas                                        DEPARTMENT
+     * Tab Page                                      
+     * X Position                                    266
+     * Y Position                                    140
+     * Width                                         100
+     * Height                                        14
+     - Bevel                                         Lowered
+     - Rendered                                      Yes
+     - Show Vertical Scroll Bar                      No
+     - Visual Attribute Group                        DEFAULT
+     - Prompt Visual Attribute Group                 DEFAULT
+     - Foreground Color                              
+     - Background Color                              
+     - Fill Pattern                                  
+     - Font                                          
+     - Font Name                                     
+     - Font Size                                     0
+     - Font Weight                                   Medium
+     - Font Style                                    Plain
+     - Font Spacing                                  Normal
+     * Prompt                                        Designation
+     * Prompt Display Style                          First Record
+     - Prompt Justification                          Start
+     * Prompt Attachment Edge                        Top
+     * Prompt Alignment                              Center
+     - Prompt Attachment Offset                      0
+     - Prompt Alignment Offset                       0
+     - Prompt Reading Order                          Default
+     - Prompt Foreground Color                       
+     - Prompt Font                                   
+     - Prompt Font Name                              
+     - Prompt Font Size                              0
+     - Prompt Font Weight                            Medium
+     - Prompt Font Style                             Plain
+     - Prompt Font Spacing                           Normal
+     - Hint                                          
+     - Display Hint Automatically                    No
+     - Tooltip                                       
+     - Tooltip Visual Attribute Group                
+     - Initial Keyboard State                        Default
+     - Reading Order                                 Default
+     - Keyboard State                                Any
+     - Triggers                                      
+     ----------
+   - Relations                                       
+   ----------
+ * Canvases                                          
+   ----------
+   * Name                                            REPAIR
+   - Canvas Type                                     Content
+   - Subclass Information                            
+   - Comments                                        
+   - Help Book Topic                                 
+   - Raise on Entry                                  No
+   - Popup Menu                                      
+   - Visible                                         Yes
+   * Window                                          RESPONSABLE
+   - Viewport X Position on Canvas                   0
+   - Viewport Y Position on Canvas                   0
+   * Width                                           529
+   * Height                                          329
+   - Bevel                                           Lowered
+   - Visual Attribute Group                          DEFAULT
+   - Foreground Color                                
+   - Background Color                                
+   - Fill Pattern                                    
+   - Direction                                       Default
+   * Graphics Objects                                
+     ----------
+     * Name                                          TEXT82
+     * Graphics Type                                 Text
+     - Subclass Information                          
+     * X Position                                    137
+     * Y Position                                    19
+     * Width                                         266
+     * Height                                        25
+     - Line Width                                    0
+     - Dash Style                                    Solid
+     - Cap Style                                     Butt
+     - Join Style                                    Mitre
+     - Rotation Angle                                0
+     - Custom Spacing                                0
+     - Line Spacing                                  Single
+     - Fixed Bounding Box                            No
+     - Wrap Text                                     Yes
+     - Bounding Box Scaleable                        Yes
+     - Font Scaleable                                No
+     * Horizontal Justification                      Start
+     - Vertical Justification                        Top
+     - Horizontal Origin                             Left
+     - Vertical Origin                               Top
+     * Bevel                                         None
+     - Visual Attribute Group                        DEFAULT
+     - Foreground Color                              
+     - Background Color                              
+     * Fill Pattern                                  none
+     - Edge Foreground Color                         
+     * Edge Background Color                         white
+     * Edge Pattern                                  none
+     - Direction                                     Default
+     * Compound Text Objects                         
+       ----------
+       * Name                                        CMPTXT83
+       * Simple Text Objects                         
+         ----------
+         * Name                                      TEXTSTR84
+         - Help Book Topic                           
+         * List Item Value                           Zone de demande de reforme
+         * Foreground Color                          black
+         - Font                                      
+         * Font Name                                 Tahoma
+         * Font Size                                 20
+         * Font Weight                               Demilight
+         * Font Style                                Plain
+         * Font Spacing                              Normal
+         ----------
+       ----------
+     ----------
+     * Name                                          TEXT87
+     * Graphics Type                                 Text
+     - Subclass Information                          
+     * X Position                                    51
+     * Y Position                                    112
+     * Width                                         90
+     * Height                                        25
+     - Line Width                                    0
+     - Dash Style                                    Solid
+     - Cap Style                                     Butt
+     - Join Style                                    Mitre
+     - Rotation Angle                                0
+     - Custom Spacing                                0
+     - Line Spacing                                  Single
+     - Fixed Bounding Box                            No
+     - Wrap Text                                     Yes
+     - Bounding Box Scaleable                        Yes
+     - Font Scaleable                                No
+     * Horizontal Justification                      Start
+     - Vertical Justification                        Top
+     - Horizontal Origin                             Left
+     - Vertical Origin                               Top
+     * Bevel                                         None
+     - Visual Attribute Group                        DEFAULT
+     - Foreground Color                              
+     - Background Color                              
+     * Fill Pattern                                  none
+     - Edge Foreground Color                         
+     * Edge Background Color                         white
+     * Edge Pattern                                  none
+     - Direction                                     Default
+     * Compound Text Objects                         
+       ----------
+       * Name                                        CMPTXT88
+       * Simple Text Objects                         
+         ----------
+         * Name                                      TEXTSTR89
+         - Help Book Topic                           
+         * List Item Value                           Message :
+         * Foreground Color                          black
+         - Font                                      
+         * Font Name                                 Tahoma
+         * Font Size                                 16
+         * Font Weight                               Demilight
+         * Font Style                                Plain
+         * Font Spacing                              Normal
+         ----------
+       ----------
+     ----------
+   ----------
+   * Name                                            DEPARTMENT
+   - Canvas Type                                     Content
+   - Subclass Information                            
+   - Comments                                        
+   - Help Book Topic                                 
+   - Raise on Entry                                  No
+   - Popup Menu                                      
+   - Visible                                         Yes
+   * Window                                          RESPONSABLE
+   - Viewport X Position on Canvas                   0
+   * Viewport Y Position on Canvas                   0
+   * Width                                           529
+   * Height                                          330
+   - Bevel                                           Lowered
+   - Visual Attribute Group                          DEFAULT
+   - Foreground Color                                
+   - Background Color                                
+   - Fill Pattern                                    
+   - Direction                                       Default
+   * Graphics Objects                                
+     ----------
+     * Name                                          TEXT49
+     * Graphics Type                                 Text
+     - Subclass Information                          
+     * X Position                                    132
+     * Y Position                                    13
+     * Width                                         247
+     * Height                                        36
+     - Line Width                                    0
+     - Dash Style                                    Solid
+     - Cap Style                                     Butt
+     * Join Style                                    Bevel
+     - Rotation Angle                                0
+     - Custom Spacing                                0
+     - Line Spacing                                  Single
+     - Fixed Bounding Box                            No
+     - Wrap Text                                     Yes
+     - Bounding Box Scaleable                        Yes
+     - Font Scaleable                                No
+     * Horizontal Justification                      Start
+     - Vertical Justification                        Top
+     - Horizontal Origin                             Left
+     - Vertical Origin                               Top
+     * Bevel                                         None
+     - Visual Attribute Group                        DEFAULT
+     - Foreground Color                              
+     * Background Color                              gray12
+     * Fill Pattern                                  none
+     - Edge Foreground Color                         
+     - Edge Background Color                         
+     * Edge Pattern                                  none
+     - Direction                                     Default
+     * Compound Text Objects                         
+       ----------
+       * Name                                        CMPTXT50
+       * Simple Text Objects                         
+         ----------
+         * Name                                      TEXTSTR51
+         - Help Book Topic                           
+         * List Item Value                           Zone Departement
+         * Foreground Color                          black
+         - Font                                      
+         * Font Name                                 Tahoma
+         * Font Size                                 30
+         * Font Weight                               Demilight
+         * Font Style                                Plain
+         * Font Spacing                              Normal
+         ----------
+       ----------
+     ----------
+     * Name                                          FRAME77
+     * Graphics Type                                 Frame
+     - Subclass Information                          
+     * Layout Data Block                             DEPARTMENT
+     - Update Layout                                 Automatically
+     * Layout Style                                  Tabular
+     - Frame Alignment                               Column
+     - Single Object Alignment                       Start
+     * Horizontal Margin                             7
+     * Vertical Margin                               14
+     * Horizontal Object Offset                      0
+     - Vertical Object Offset                        0
+     - Allow Expansion                               Yes
+     - Shrinkwrap                                    No
+     - Vertical Fill                                 Yes
+     - Maximum Objects per Line                      0
+     - Start Prompt Alignment                        Start
+     * Start Prompt Offset                           7
+     - Top Prompt Alignment                          Center
+     - Top Prompt Offset                             0
+     - Allow Multi-line Prompts                      Yes
+     - Allow Top-Attached Prompts                    No
+     - Allow Start-Attached Prompts                  No
+     - Number of Records Displayed                   1
+     - Distance Between Records                      0
+     - Show Scroll Bar                               No
+     - Scroll Bar Alignment                          End
+     * Scroll Bar Width                              14
+     * X Position                                    159
+     * Y Position                                    116
+     * Width                                         214
+     * Height                                        52
+     - Line Width                                    0
+     - Dash Style                                    Solid
+     - Cap Style                                     Butt
+     - Join Style                                    Mitre
+     * Bevel                                         Inset
+     - Visual Attribute Group                        DEFAULT
+     - Frame Title Visual Attribute Group            DEFAULT
+     - Foreground Color                              
+     - Background Color                              
+     * Fill Pattern                                  none
+     - Edge Foreground Color                         
+     * Edge Background Color                         white
+     * Edge Pattern                                  solid
+     * Frame Title                                   Departement du responsable
+     - Frame Title Alignment                         Start
+     * Frame Title Offset                            14
+     * Frame Title Spacing                           7
+     - Frame Title Reading Order                     Default
+     - Frame Title Foreground Color                  
+     - Title Font                                    
+     - Frame Title Font Name                         
+     - Frame Title Font Size                         0
+     - Frame Title Font Weight                       Medium
+     - Frame Title Font Style                        Plain
+     - Frame Title Font Spacing                      Normal
+     ----------
+   ----------
+   * Name                                            RESPONSABLE
+   - Canvas Type                                     Content
+   - Subclass Information                            
+   - Comments                                        
+   - Help Book Topic                                 
+   * Raise on Entry                                  Yes
+   - Popup Menu                                      
+   - Visible                                         Yes
+   * Window                                          RESPONSABLE
+   * Viewport X Position on Canvas                   0
+   * Viewport Y Position on Canvas                   0
+   * Width                                           529
+   * Height                                          329
+   * Bevel                                           Raised
+   - Visual Attribute Group                          DEFAULT
+   - Foreground Color                                
+   - Background Color                                
+   - Fill Pattern                                    
+   - Direction                                       Default
+   * Graphics Objects                                
+     ----------
+     * Name                                          ROUNDRECT78
+     * Graphics Type                                 Rounded Rectangle
+     - Subclass Information                          
+     * X Position                                    18
+     * Y Position                                    120
+     * Width                                         497
+     * Height                                        47
+     * Line Width                                    .01
+     - Dash Style                                    Solid
+     - Cap Style                                     Butt
+     * Join Style                                    Bevel
+     - Rotation Angle                                0
+     * X Corner Radius                               10
+     * Y Corner Radius                               10
+     - Visual Attribute Group                        DEFAULT
+     - Foreground Color                              
+     * Background Color                              gray12
+     * Fill Pattern                                  none
+     - Edge Foreground Color                         
+     - Edge Background Color                         
+     * Edge Pattern                                  solid
+     ----------
+     * Name                                          TEXT119
+     * Graphics Type                                 Text
+     - Subclass Information                          
+     * X Position                                    169
+     * Y Position                                    41
+     * Width                                         157
+     * Height                                        25
+     - Line Width                                    0
+     - Dash Style                                    Solid
+     - Cap Style                                     Butt
+     * Join Style                                    Bevel
+     - Rotation Angle                                0
+     - Custom Spacing                                0
+     - Line Spacing                                  Single
+     - Fixed Bounding Box                            No
+     - Wrap Text                                     Yes
+     - Bounding Box Scaleable                        Yes
+     - Font Scaleable                                No
+     * Horizontal Justification                      Start
+     - Vertical Justification                        Top
+     - Horizontal Origin                             Left
+     - Vertical Origin                               Top
+     * Bevel                                         None
+     - Visual Attribute Group                        DEFAULT
+     - Foreground Color                              
+     * Background Color                              gray12
+     * Fill Pattern                                  none
+     - Edge Foreground Color                         
+     - Edge Background Color                         
+     * Edge Pattern                                  none
+     - Direction                                     Default
+     * Compound Text Objects                         
+       ----------
+       * Name                                        CMPTXT120
+       * Simple Text Objects                         
+         ----------
+         * Name                                      TEXTSTR121
+         - Help Book Topic                           
+         * List Item Value                           Zone responsable
+         * Foreground Color                          black
+         - Font                                      
+         * Font Name                                 Tahoma
+         * Font Size                                 20
+         * Font Weight                               Demilight
+         * Font Style                                Plain
+         * Font Spacing                              Normal
+         ----------
+       ----------
+     ----------
+     * Name                                          IMAGE124
+     * Graphics Type                                 Image
+     - Subclass Information                          
+     - Display Quality                               High
+     - X Position                                    0
+     - Y Position                                    0
+     * Width                                         529
+     * Height                                        330
+     * Dither                                        No
+     - Clip X Position                               0
+     - Clip Y Position                               0
+     * Clip Width                                    529
+     * Clip Height                                   330
+     - Visual Attribute Group                        DEFAULT
+     ----------
+     * Name                                          TEXT125
+     * Graphics Type                                 Text
+     - Subclass Information                          
+     * X Position                                    153
+     * Y Position                                    33
+     * Width                                         232
+     * Height                                        36
+     - Line Width                                    0
+     - Dash Style                                    Solid
+     - Cap Style                                     Butt
+     * Join Style                                    Bevel
+     - Rotation Angle                                0
+     - Custom Spacing                                0
+     - Line Spacing                                  Single
+     - Fixed Bounding Box                            No
+     - Wrap Text                                     Yes
+     - Bounding Box Scaleable                        Yes
+     - Font Scaleable                                No
+     * Horizontal Justification                      Start
+     - Vertical Justification                        Top
+     - Horizontal Origin                             Left
+     - Vertical Origin                               Top
+     * Bevel                                         None
+     - Visual Attribute Group                        DEFAULT
+     - Foreground Color                              
+     * Background Color                              gray12
+     * Fill Pattern                                  none
+     - Edge Foreground Color                         
+     - Edge Background Color                         
+     * Edge Pattern                                  none
+     - Direction                                     Default
+     * Compound Text Objects                         
+       ----------
+       * Name                                        CMPTXT126
+       * Simple Text Objects                         
+         ----------
+         * Name                                      TEXTSTR127
+         - Help Book Topic                           
+         * List Item Value                           Zone responsable
+         * Foreground Color                          black
+         - Font                                      
+         * Font Name                                 Tahoma
+         * Font Size                                 30
+         * Font Weight                               Demilight
+         * Font Style                                Plain
+         * Font Spacing                              Normal
+         ----------
+       ----------
+     ----------
+     * Name                                          RECT129
+     * Graphics Type                                 Rectangle
+     - Subclass Information                          
+     * X Position                                    29
+     * Y Position                                    117
+     * Width                                         483
+     * Height                                        55
+     * Line Width                                    .01
+     - Dash Style                                    Solid
+     - Cap Style                                     Butt
+     * Join Style                                    Bevel
+     - Rotation Angle                                0
+     * Bevel                                         None
+     - Visual Attribute Group                        DEFAULT
+     - Foreground Color                              
+     * Background Color                              custom2
+     - Fill Pattern                                  
+     - Edge Foreground Color                         
+     - Edge Background Color                         
+     - Edge Pattern                                  
+     ----------
+   ----------
+   * Name                                            MATERIEL
+   * Canvas Type                                     Content
+   - Subclass Information                            
+   - Comments                                        
+   - Help Book Topic                                 
+   - Raise on Entry                                  No
+   - Popup Menu                                      
+   - Visible                                         Yes
+   * Window                                          RESPONSABLE
+   - Viewport X Position on Canvas                   0
+   - Viewport Y Position on Canvas                   0
+   * Width                                           528
+   * Height                                          329
+   - Bevel                                           Lowered
+   - Visual Attribute Group                          DEFAULT
+   - Foreground Color                                
+   - Background Color                                
+   - Fill Pattern                                    
+   - Direction                                       Default
+   * Graphics Objects                                
+     ----------
+     * Name                                          FRAME135
+     * Graphics Type                                 Frame
+     - Subclass Information                          
+     * Layout Data Block                             MATERIEL
+     - Update Layout                                 Automatically
+     * Layout Style                                  Tabular
+     - Frame Alignment                               Column
+     - Single Object Alignment                       Start
+     * Horizontal Margin                             7
+     * Vertical Margin                               14
+     * Horizontal Object Offset                      0
+     - Vertical Object Offset                        0
+     - Allow Expansion                               Yes
+     - Shrinkwrap                                    No
+     - Vertical Fill                                 Yes
+     - Maximum Objects per Line                      0
+     - Start Prompt Alignment                        Start
+     * Start Prompt Offset                           7
+     - Top Prompt Alignment                          Center
+     - Top Prompt Offset                             0
+     - Allow Multi-line Prompts                      Yes
+     - Allow Top-Attached Prompts                    No
+     - Allow Start-Attached Prompts                  No
+     - Number of Records Displayed                   1
+     - Distance Between Records                      0
+     * Show Scroll Bar                               Yes
+     - Scroll Bar Alignment                          End
+     * Scroll Bar Width                              14
+     * X Position                                    153
+     * Y Position                                    110
+     * Width                                         177
+     * Height                                        47
+     - Line Width                                    0
+     - Dash Style                                    Solid
+     - Cap Style                                     Butt
+     - Join Style                                    Mitre
+     * Bevel                                         Inset
+     - Visual Attribute Group                        DEFAULT
+     - Frame Title Visual Attribute Group            DEFAULT
+     - Foreground Color                              
+     - Background Color                              
+     * Fill Pattern                                  none
+     - Edge Foreground Color                         
+     * Edge Background Color                         white
+     * Edge Pattern                                  solid
+     * Frame Title                                   Liste des materiels
+     - Frame Title Alignment                         Start
+     * Frame Title Offset                            14
+     * Frame Title Spacing                           7
+     - Frame Title Reading Order                     Default
+     - Frame Title Foreground Color                  
+     - Title Font                                    
+     - Frame Title Font Name                         
+     - Frame Title Font Size                         0
+     - Frame Title Font Weight                       Medium
+     - Frame Title Font Style                        Plain
+     - Frame Title Font Spacing                      Normal
+     ----------
+     * Name                                          TEXT136
+     * Graphics Type                                 Text
+     - Subclass Information                          
+     * X Position                                    174
+     * Y Position                                    34
+     * Width                                         164
+     * Height                                        25
+     - Line Width                                    0
+     - Dash Style                                    Solid
+     - Cap Style                                     Butt
+     - Join Style                                    Mitre
+     - Rotation Angle                                0
+     - Custom Spacing                                0
+     - Line Spacing                                  Single
+     - Fixed Bounding Box                            No
+     - Wrap Text                                     Yes
+     * Bounding Box Scaleable                        No
+     - Font Scaleable                                No
+     * Horizontal Justification                      Start
+     - Vertical Justification                        Top
+     - Horizontal Origin                             Left
+     * Vertical Origin                               Center
+     * Bevel                                         None
+     - Visual Attribute Group                        DEFAULT
+     - Foreground Color                              
+     - Background Color                              
+     * Fill Pattern                                  none
+     - Edge Foreground Color                         
+     * Edge Background Color                         white
+     * Edge Pattern                                  none
+     - Direction                                     Default
+     * Compound Text Objects                         
+       ----------
+       * Name                                        CMPTXT137
+       * Simple Text Objects                         
+         ----------
+         * Name                                      TEXTSTR138
+         - Help Book Topic                           
+         * List Item Value                           Liste des materiels
+         * Foreground Color                          black
+         - Font                                      
+         * Font Name                                 Tahoma
+         * Font Size                                 20
+         * Font Weight                               Demilight
+         * Font Style                                Plain
+         * Font Spacing                              Normal
+         ----------
+       ----------
+     ----------
+   ----------
+ - Editors                                           
+ * Form Parameters                                   
+   ----------
+   * Name                                            RESP_NAME
+   - Subclass Information                            
+   - Comments                                        
+   - Parameter Data Type                             Char
+   - Parameter Initial Value                         
+   ----------
+   * Name                                            ID_RESP
+   - Subclass Information                            
+   - Comments                                        
+   - Parameter Data Type                             Char
+   - Parameter Initial Value                         
+   ----------
+ - Lists of Values                                   
+ - Menus                                             
+ - Object Groups                                     
+ - Program Units                                     
+ - Property Classes                                  
+ - Record Groups                                     
+ - Reports                                           
+ - Visual Attributes                                 
+ * Windows                                           
+   ----------
+   * Name                                            RESPONSABLE
+   - Subclass Information                            
+   - Comments                                        
+   - Help Book Topic                                 
+   * Title                                           Page responsable
+   - Primary Canvas                                  
+   - Horizontal Toolbar Canvas                       
+   - Vertical Toolbar Canvas                         
+   - Window Style                                    Document
+   - Modal                                           No
+   * Hide on Exit                                    Yes
+   - Close Allowed                                   Yes
+   - Move Allowed                                    Yes
+   * Resize Allowed                                  No
+   * Maximize Allowed                                No
+   * Minimize Allowed                                No
+   - Minimized Title                                 
+   - Icon Filename                                   
+   - Inherit Menu                                    Yes
+   - X Position                                      0
+   - Y Position                                      0
+   * Width                                           529
+   * Height                                          330
+   - Bevel                                           Lowered
+   - Show Horizontal Scroll Bar                      No
+   - Show Vertical Scroll Bar                        No
+   - Visual Attribute Group                          DEFAULT
+   - Foreground Color                                
+   - Background Color                                
+   - Fill Pattern                                    
+   - Font                                            
+   - Font Name                                       
+   - Font Size                                       0
+   - Font Weight                                     Medium
+   - Font Style                                      Plain
+   - Font Spacing                                    Normal
+   - Direction                                       Default
+   ----------

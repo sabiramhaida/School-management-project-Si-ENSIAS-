@@ -1,0 +1,19 @@
+DECLARE
+	v_username responsable.ID_RESPONSABLE%TYPE;
+	v_password responsable.password%TYPE ;
+	CURSOR v_cursor is select ID_RESPONSABLE,PASSWORD from responsable;
+begin
+ OPEN v_cursor;
+ LOOP
+ 	FETCH v_cursor into v_username,v_password;
+ 	EXIT WHEN v_cursor%notfound;
+ 	IF :USERNAME = v_username AND :PASS = v_password then
+ 		 Message('mot de passe valide');
+ 		end if;  
+ END LOOP;
+ commit;
+end;
+	/*PL_ID PARAMLIST;*/
+/*PL_ID := CREATE_PARAMETER_LIST(PL_NAME);*/
+ /*ADD_PARAMETER(PL_ID,'ID_RESP', TEXT_PARAMETER,TO_CHAR(:USERNAME));*/
+ 		 /*ADD_PARAMETER(PL_ID,'PASSWORD', TEXT_PARAMETER,TO_CHAR(:PASS));*/
